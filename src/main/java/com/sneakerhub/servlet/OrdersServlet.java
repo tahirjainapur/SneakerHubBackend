@@ -16,6 +16,7 @@ import jakarta.servlet.http.HttpSession;
 
 import com.sneakerhub.db.DBConnection;
 
+@WebServlet("/orders")
 public class OrdersServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 

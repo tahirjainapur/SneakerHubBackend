@@ -13,6 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import com.sneakerhub.db.DBConnection;
 
+@WebServlet("/signup")
 public class SignupServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
