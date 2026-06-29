@@ -1,0 +1,2 @@
+# Ensure that the Unix wrapper script always has LF line endings when committed
+mvnw text eol=lf
