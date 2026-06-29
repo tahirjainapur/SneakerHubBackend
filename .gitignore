@@ -1,0 +1,39 @@
+# --- Maven Build Targets ---
+target/
+*.war
+*.jar
+*.zip
+*.tar.gz
+*.rar
+*.class
+
+# --- IDE Specific Files ---
+# Eclipse
+.classpath
+.project
+.settings/
+build/
+bin/
+.metadata/
+src/main/webapp/WEB-INF/classes/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# --- Local Scripts & OS Files ---
+start_tomcat.bat
+Thumbs.db
+.DS_Store
+
+# --- Log Files ---
+*.log
+
+# --- Secrets and Environments ---
+.env
+.env.local
+.env.production

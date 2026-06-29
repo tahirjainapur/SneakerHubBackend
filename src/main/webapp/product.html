@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerHub | Product Details</title>
+    <meta name="description" content="View product details on SneakerHub.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar dark-theme">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">SNEAKERHUB</a>
+
+            <ul class="nav-links center-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="cart.html"><span id="cart-count">🛒 Cart (0)</span></a></li>
+            </ul>
+
+            <div class="nav-auth" id="nav-auth">
+                <a href="login.html" class="auth-link">Login</a>
+                <a href="signup.html" class="auth-link">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details Section -->
+    <main>
+        <section class="product-details-section">
+            <div class="container product-details-container">
+                <div class="product-image-large">
+                    <img id="detail-image" src="" alt="Product Image">
+                </div>
+                <div class="product-info-detailed">
+                    <h1 id="detail-name" class="product-title-large">Loading...</h1>
+                    <div class="price-wrapper">
+                        <span id="detail-price" class="price-large"></span>
+                    </div>
+                    
+                    <p class="product-short-desc">
+                        Experience ultimate comfort and standout style with this premium sneaker. Designed for everyday wear and engineered to turn heads, this shoe blends classic aesthetics with modern innovation.
+                    </p>
+
+                    <div class="detail-options">
+                        <div class="option-group">
+                            <label for="detail-size">Select Size:</label>
+                            <select id="detail-size" class="select-box size-select-large">
+                                <option value="">Size</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+                        <div class="option-group">
+                            <label for="detail-color">Select Color:</label>
+                            <select id="detail-color" class="select-box color-select-large">
+                                <option value="">Color</option>
+                                <option value="Black">Black</option>
+                                <option value="White">White</option>
+                                <option value="Red">Red</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button id="detail-add-to-cart" class="btn btn-cart add-to-cart-large">Add to Cart</button>
+                        <button id="detail-add-to-wishlist" class="btn btn-wishlist-large">Add to Wishlist ❤️</button>
+                    </div>
+                    
+                    <div style="margin-top: 1rem;">
+                        <a href="index.html#products" class="back-link">← Back to Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+
+</html>

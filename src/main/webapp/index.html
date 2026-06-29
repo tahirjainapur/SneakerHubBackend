@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerHub | Premium Sneakers</title>
+    <meta name="description" content="Latest Sneakers at Best Prices.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar dark-theme">
+        <div class="container nav-content">
+            <a href="#" class="logo">SNEAKERHUB</a>
+
+            <ul class="nav-links center-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="cart.html"><span id="cart-count">🛒 Cart (0)</span></a></li>
+            </ul>
+
+            <div class="nav-auth" id="nav-auth">
+                <a href="login.html" class="auth-link">Login</a>
+                <a href="signup.html" class="auth-link">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Step Into Style 👟</h1>
+                <p class="tagline">Latest Sneakers at Best Prices</p>
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Featured Red Sneaker" class="hero-shoe">
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <main>
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2 class="section-title">Trending Now</h2>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="btn-wishlist">♡</button>
+                            <span class="badge">Hot</span>
+                            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Nike Air Max">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike Air Max</h3>
+                            <div class="price-wrapper">
+                                <span class="price">₹12,500</span>
+                            </div>
+
+                            <button class="btn btn-primary view-details-btn" data-name="Nike Air Max" data-price="12500"
+                                style="width: 100%; margin-top: 1rem;">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="btn-wishlist">♡</button>
+                            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Adidas Ultraboost">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Adidas Ultraboost</h3>
+                            <div class="price-wrapper">
+                                <span class="price">₹14,000</span>
+                            </div>
+
+                            <button class="btn btn-primary view-details-btn" data-name="Puma RS-X" data-price="9500"
+                                style="width: 100%; margin-top: 1rem;">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="btn-wishlist">♡</button>
+                            <span class="badge">New</span>
+                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Jordan 1 Retro">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Jordan 1 Retro</h3>
+                            <div class="price-wrapper">
+                                <span class="price">₹18,000</span>
+                            </div>
+
+                            <button class="btn btn-primary view-details-btn" data-name="Jordan 1 Retro"
+                                data-price="18000" style="width: 100%; margin-top: 1rem;">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="btn-wishlist">♡</button>
+                            <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="New Balance 550">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">New Balance 550</h3>
+                            <div class="price-wrapper">
+                                <span class="price">₹11,000</span>
+                            </div>
+
+                            <button class="btn btn-primary view-details-btn" data-name="New Balance 550"
+                                data-price="11000" style="width: 100%; margin-top: 1rem;">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="btn-wishlist">♡</button>
+                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Asics Gel-Lyte">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Asics Gel-Lyte</h3>
+                            <div class="price-wrapper">
+                                <span class="price">₹8,500</span>
+                            </div>
+
+                            <button class="btn btn-primary view-details-btn" data-name="Asics Gel-Lyte"
+                                data-price="8500" style="width: 100%; margin-top: 1rem;">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="btn-wishlist">♡</button>
+                            <span class="badge">Sale</span>
+                            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Converse Chuck 70">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Converse Chuck 70</h3>
+                            <div class="price-wrapper">
+                                <span class="price">₹6,000</span>
+                            </div>
+
+                            <button class="btn btn-primary view-details-btn" data-name="Converse Chuck 70"
+                                data-price="6000" style="width: 100%; margin-top: 1rem;">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="btn-wishlist">♡</button>
+                            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Vans Old Skool">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Vans Old Skool</h3>
+                            <div class="price-wrapper">
+                                <span class="price">₹5,500</span>
+                            </div>
+
+                            <button class="btn btn-primary view-details-btn" data-name="Vans Old Skool"
+                                data-price="5500" style="width: 100%; margin-top: 1rem;">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="btn-wishlist">♡</button>
+                            <img src="https://images.unsplash.com/photo-1588099768523-f4e6a5679d88?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Reebok Club C">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Reebok Club C</h3>
+                            <div class="price-wrapper">
+                                <span class="price">₹7,000</span>
+                            </div>
+
+                            <button class="btn btn-primary view-details-btn" data-name="Reebok Club C" data-price="7000"
+                                style="width: 100%; margin-top: 1rem;">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="btn-wishlist">♡</button>
+                            <span class="badge">Hot</span>
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Nike Dunk Low">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike Dunk Low</h3>
+                            <div class="price-wrapper">
+                                <span class="price">₹10,500</span>
+                            </div>
+
+                            <button class="btn btn-primary view-details-btn" data-name="Nike Dunk Low"
+                                data-price="10500" style="width: 100%; margin-top: 1rem;">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
