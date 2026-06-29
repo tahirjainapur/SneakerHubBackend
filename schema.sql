@@ -18,5 +18,6 @@ CREATE TABLE IF NOT EXISTS orders (
     total_price DECIMAL(10, 2) NOT NULL,
     address TEXT NOT NULL,
     payment_method VARCHAR(50) NOT NULL,
+    status VARCHAR(50) DEFAULT 'Placed',
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
