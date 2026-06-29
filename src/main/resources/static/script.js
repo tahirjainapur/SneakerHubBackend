@@ -15,8 +15,8 @@ async function updateAuthNavbar() {
     if (!navAuth) return;
 
     try {
-        console.log("DEBUG: Checking user session at /SneakerHubBackend/user");
-        const response = await fetch('/SneakerHubBackend/user');
+        console.log("DEBUG: Checking user session at /user");
+        const response = await fetch('/user');
         if (!response.ok) {
             console.error("DEBUG: User API failed with status:", response.status);
             return;

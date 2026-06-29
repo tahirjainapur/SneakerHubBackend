@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Fetch Data from Backend
     const ordersContainer = document.getElementById('orders-container');
+    let orders = [];
     
     async function fetchOrders() {
         try {
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 throw new Error('Failed to fetch orders');
             }
-            const orders = await response.json();
+            orders = await response.json();
             renderOrders(orders);
         } catch (error) {
             console.error('Error:', error);
@@ -134,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     orders[targetOrderIndex].status = "Cancelled";
                     orders[targetOrderIndex].reason = reason.trim();
                     localStorage.setItem('orders', JSON.stringify(orders));
-                    renderOrders();
+                    renderOrders(orders);
                 }
             });
         });
@@ -158,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 orders = currentOrders; // sync local array
                 localStorage.setItem('orders', JSON.stringify(orders));
-                renderOrders();
+                renderOrders(orders);
             }
         }
     }
